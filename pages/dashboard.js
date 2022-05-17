@@ -14,23 +14,23 @@ export default function Dashboard({ navigation, route }) {
                 <Text style={styles.btnText}>Add Car</Text>
             </TouchableOpacity>
             <TouchableOpacity style={styles.BoxDash} onPress={() => navigation.navigate("OwnCarView")}>
-            <Text style={styles.btnText}>List Own Cars</Text>
+            <Text style={styles.btnText}>show Cars</Text>
             </TouchableOpacity>
         </View>
         <View style={styles.Row}>
-            <TouchableOpacity style={[styles.BoxDash, styles.mb10]} onPress={rentIn}>
-                <Text style={styles.btnText}>Add Car</Text>
-            </TouchableOpacity>
             <TouchableOpacity style={styles.BoxDash} onPress={rentOut}>
-            <Text style={styles.btnText}>Book A Car</Text>
+            <Text style={styles.btnText}>Book Car</Text>
+            
+            </TouchableOpacity>
+            <TouchableOpacity style={styles.BoxDash} onPress={() => navigation.navigate("BookingList")}>
+            <Text style={styles.btnText}>View Bookings</Text>
             </TouchableOpacity>
         </View>
-        <View style={styles.Row}>
-            <TouchableOpacity style={[styles.BoxDash, styles.mb10]} onPress={rentIn}>
-                <Text style={styles.btnText}>Add Car</Text>
-            </TouchableOpacity>
 
+        <View style={styles.Row}>
+          
         </View>
+      
       <Image style={{width: Dimensions.get('window').width}} source={require("../assets/car.png")}/>
     </View>
   );

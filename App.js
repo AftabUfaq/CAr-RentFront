@@ -13,6 +13,8 @@ import Vehicles from './pages/vehicles.js';
 import Detail from './pages/detail.js';
 import Confirm from './pages/confirm.js';
 import OwnCarView from './pages/OwnCarView.js';
+import BookCar from './pages/BookCar'
+import BookingList from './pages/BookingList'
 import { LogBox } from 'react-native';
 
 LogBox.ignoreLogs([
@@ -30,12 +32,33 @@ export default function App() {
         options={{header: () => null}}
         />
         <Stack.Screen
-        name="Sign In"
-        component={SignIn}
+          name="Sign In"
+          component={SignIn}
+          options={{
+            title:"Sign In",
+            headerStyle: {
+              backgroundColor: '#C70404',
+            },
+            headerTintColor: '#fff',
+            headerTitleStyle: {
+              fontWeight: 'bold',
+            },
+          }}
         />
         <Stack.Screen
         name="Sign Up"
         component={SignUp}
+        options={{
+          title:"Sign Up",
+          headerStyle: {
+            backgroundColor: '#C70404',
+          },
+          headerTintColor: '#fff',
+          headerTitleStyle: {
+            fontWeight: 'bold',
+          },
+        }}
+        
         />
         <Stack.Screen
         name="Dashboard"
@@ -45,26 +68,121 @@ export default function App() {
         <Stack.Screen
         name="Rent Out"
         component={RentOut}
+        options={{
+          title:"Rent Out",
+          headerStyle: {
+            backgroundColor: '#C70404',
+          },
+          headerTintColor: '#fff',
+          headerTitleStyle: {
+            fontWeight: 'bold',
+          },
+        }}
+        
         />
         <Stack.Screen
         name="Rent In"
         component={RentIn}
+        options={{
+          title:"Rent In",
+          headerStyle: {
+            backgroundColor: '#C70404',
+          },
+          headerTintColor: '#fff',
+          headerTitleStyle: {
+            fontWeight: 'bold',
+          },
+        }}
+        
+        
         />
+
+    <Stack.Screen
+        name="BookCar"
+        component={BookCar}
+        options={{
+          title:"Book Car",
+          headerStyle: {
+            backgroundColor: '#C70404',
+          },
+          headerTintColor: '#fff',
+          headerTitleStyle: {
+            fontWeight: 'bold',
+          },
+        }}
+        />
+
+<Stack.Screen
+        name="BookingList"
+        component={BookingList}
+        options={{
+          title:"All Bookings",
+          headerStyle: {
+            backgroundColor: '#C70404',
+          },
+          headerTintColor: '#fff',
+          headerTitleStyle: {
+            fontWeight: 'bold',
+          },
+        }}
+        />
+
         <Stack.Screen
         name="Categories"
         component={Categories}
+        options={{
+          title:"Categories",
+          headerStyle: {
+            backgroundColor: '#C70404',
+          },
+          headerTintColor: '#fff',
+          headerTitleStyle: {
+            fontWeight: 'bold',
+          },
+        }}
+        
         />
         <Stack.Screen
         name="Vehicles"
         component={Vehicles}
+        options={{
+          title:"Vehicles",
+          headerStyle: {
+            backgroundColor: '#C70404',
+          },
+          headerTintColor: '#fff',
+          headerTitleStyle: {
+            fontWeight: 'bold',
+          },
+        }}
         />
         <Stack.Screen
           name="Detail"
           component={Detail}
+          options={{
+            title:"Details",
+            headerStyle: {
+              backgroundColor: '#C70404',
+            },
+            headerTintColor: '#fff',
+            headerTitleStyle: {
+              fontWeight: 'bold',
+            },
+          }}
         />
         <Stack.Screen
           name="OwnCarView"
           component={OwnCarView}
+          options={{
+            title:"Car Added",
+            headerStyle: {
+              backgroundColor: '#C70404',
+            },
+            headerTintColor: '#fff',
+            headerTitleStyle: {
+              fontWeight: 'bold',
+            },
+          }}
         />
 
 
